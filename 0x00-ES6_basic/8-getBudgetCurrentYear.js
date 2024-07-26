@@ -1,4 +1,3 @@
-//ES6 computation_budget
 function getCurrentYear() {
   const date = new Date();
   return date.getFullYear();
