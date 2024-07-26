@@ -1,6 +1,10 @@
 export default function getResponseFromAPI() {
+  const success = 'some message here';
   return new Promise((resolve, reject) => {
-    // You can add logic here if necessary
-    resolve();
+    if (success) {
+      resolve({ status: 200, body: 'Success' });
+    } else {
+      reject(Error('API not working'));
+    }
   });
 }
